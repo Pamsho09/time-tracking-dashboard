@@ -1,0 +1,175 @@
+:root{
+
+
+--Blue: hsl(246, 80%, 60%);
+--LightOrange : hsl(15, 100%, 70%);
+--SoftBlue: hsl(195, 74%, 62%);
+--Lightred : hsl(348, 100%, 68%);
+--LimeGreen : hsl(145, 58%, 55%);
+--Violet : hsl(264, 64%, 52%);
+--SoftOrange : hsl(43, 84%, 65%);
+
+
+
+--VeryDarkBlue: hsl(226, 43%, 10%);
+--DarkbBlue: hsl(235, 46%, 20%);
+--DesaturatedBlue: hsl(235, 45%, 61%);
+--PaleBlue: hsl(236, 100%, 87%);
+}
+html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
+
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--VeryDarkBlue);
+}
+
+id{
+    display: grid;
+}
+.study{
+    background-color: var(--Lightred);
+    background-image: url("./images/icon-study.svg");
+    background-repeat: no-repeat;
+    background-position-x: 239px;
+}
+.exercise{
+    background-color: var(--LimeGreen);
+    background-image: url("./images/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position-x: 239px;
+}
+.social{
+    background-color: var(--Violet);
+    background-image: url("./images/icon-social.svg");
+    background-repeat: no-repeat;
+    background-position-x: 239px;
+}
+.work{
+    background-color: var(--LightOrange);
+    background-image: url("./images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position-x: 239px;
+}
+.play{
+
+    background-image: url("./images/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position-x: 239px;
+    background-color: var(--SoftBlue);
+}
+.selfcare{
+    background-color: var(--SoftOrange);
+    background-image: url("./images/icon-self-care.svg");
+    background-repeat: no-repeat;
+    background-position-x: 239px;
+}   
+
+.container{
+    display:grid;
+}
+.container-card-user{
+width: 100%;
+
+}
+.b-r{
+border-radius: 15px;
+}
+.card-user{
+    background-color: var(--DarkbBlue);
+    margin: 10px;
+    display: grid;
+   
+}
+
+.card-user-profile{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    padding: 20px;
+    background-color: var(--Blue);
+}
+
+.card-user-profile-img{
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.card-user-profile-name{
+    font-size: 20px;
+    color: white;
+    width: 60%;
+}
+.card-user-profile-name span{
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
+}
+.card-user-profile-name h4{
+    margin: 0;
+    font-weight: 300;
+    font-size: 25px;
+}
+.card-user-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 25px;
+    place-items: center;
+    color: var(--DesaturatedBlue) ;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.card-user-options span{
+    cursor: pointer;
+}
+.is-active{
+    color: white;
+}
+
+.container-card-task{
+    width: 100%;
+}
+.card-task{
+    margin: 10px;
+    height: auto;
+
+    display: grid;
+    place-items: bottom;
+}
+.card-task-info{
+    margin-top:40px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 25px;
+    align-items: space-between;
+    background-color: var(--DarkbBlue);
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.task-name{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+.task-time{
+     font-size: 44px;
+    color: white;
+    font-weight: 300;
+}
+.container-opt{
+    display:flex;
+    justify-content: flex-end;
+align-items: center;
+cursor: pointer;
+}
+.task-previous{
+        color: var(--DesaturatedBlue) ;
+        font-weight: 400;
+        text-align: start;
+        padding-top: 10px;
+        text-align: end;
+}
